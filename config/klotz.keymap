@@ -320,7 +320,7 @@
             bindings = <
 &kp ESCAPE    &none           &kp UP_ARROW    &none      &none          &none       &tab_left     &tab_up  &tab_right     &kp F12
 &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp END        &none       &chrome_left  &none    &chrome_right  &mo 3
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR      &none      &sys_reset     &sys_reset  &mkp MB4      &none    &mkp MB5       &none
+&bt BT_SEL 0  &bt BT_SEL 1    &none      &none      &none     &none  &mkp MB4      &none    &mkp MB5       &none
                                               &none      &screenshot    &record     &none
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
