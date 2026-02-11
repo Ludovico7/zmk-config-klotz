@@ -409,7 +409,7 @@
 &none  &alt_left  &alt_down     &alt_right      &none    &cmd_left  &cmd_down    &cmd_right  &none      &none
 &none  &none      &none         &msc SCRL_DOWN  &none    &mkp MB3   &none        &none       &none      &none
                          &none  &none          &mkp MB1  &mkp MB2
-            >;;
+            >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
