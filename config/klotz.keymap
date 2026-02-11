@@ -12,11 +12,11 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <behaviors/mouse_keys.dtsi>
 
 / {
     behaviors {
@@ -320,7 +320,7 @@
             bindings = <
 &kp ESCAPE    &none           &kp UP_ARROW    &none      &none          &none       &tab_left     &tab_up  &tab_right     &kp F12
 &kp HOME      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END        &none       &chrome_left  &none    &chrome_right  &mo 3
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR      &none      &none     &none  &mkp MB4      &none    &mkp MB5       &none
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR_ALL      &none      &none     &none  &mkp MB4      &none    &mkp MB5       &none
                                               &none      &screenshot    &record     &none
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
