@@ -51,9 +51,9 @@
         };
 
         rot_tab: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
+            compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&tab_left>, <&tab_right>;
+            bindings = <&tab_right>, <&tab_left>;
         };
     };
 
