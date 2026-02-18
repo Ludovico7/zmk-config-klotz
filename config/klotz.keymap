@@ -55,12 +55,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&tab_right>, <&tab_left>;
         };
-
-        rot_scroll: sensor_rotate_scroll {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        };
     };
 
     macros {
@@ -325,7 +319,7 @@
 &trans  &trans  &none     &kp BSLH       &kp MINUS    &kp SQT   &kp GRAVE  &kp COMMA  &kp PERIOD  &kp RSHFT
                           &kp BACKSPACE  &kp SPACE    &trans    &mo 3
             >;
-        sensor-bindings = <&rot_scroll>;
+        sensor-bindings = <&rot_tab>;
         };
 
         left_layer {
@@ -335,7 +329,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR_ALL      &none      &none     &none  &mkp MB4      &none    &mkp MB5       &none
                                               &none      &screenshot    &record     &none
             >;
-        sensor-bindings = <&rot_scroll>;
+        sensor-bindings = <&rot_tab>;
         };
 
         tri_layer {
@@ -345,7 +339,7 @@
 &none  &none      &none         &msc SCRL_DOWN  &none    &mkp MB3   &none        &none       &none      &none
                          &none  &none          &mkp MB1  &mkp MB2
             >;
-        sensor-bindings = <&rot_scroll>;
+        sensor-bindings = <&rot_tab>;
         };
     };
 };
