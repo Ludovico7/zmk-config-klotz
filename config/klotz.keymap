@@ -49,6 +49,12 @@
             require-prior-idle-ms = <60>;
             bindings = <&mo>, <&kp>;
         };
+
+        rot_tab: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <0>;
+            bindings = <&tab_left>, <&tab_right>;
+        };
     };
 
     macros {
@@ -303,7 +309,7 @@
 &kp Z        &kp X       &kp C       &kp V          &kp B        &kp N      &kp M        &kp COMMA   &cmt 3 DOT     &cmt 2 SLASH
                                      &kp BACKSPACE  &kp SPACE    &kp ENTER  &mo 1
             >;
-        sensor-bindings = <&tab_right &tab_left>;
+        sensor-bindings = <&rot_tab>;
         };
 
         right_layer {
