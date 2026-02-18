@@ -49,12 +49,6 @@
             require-prior-idle-ms = <60>;
             bindings = <&mo>, <&kp>;
         };
-
-        rot: rot {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&tab_right>, <&tab_left>;
-        };
     };
 
     macros {
