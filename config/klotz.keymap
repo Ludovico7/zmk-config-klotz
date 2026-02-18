@@ -51,9 +51,9 @@
         };
 
         rot_tab: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&tab_right>, <&tab_left>;
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -309,7 +309,7 @@
 &kp Z        &kp X       &kp C       &kp V          &kp B        &kp N      &kp M        &kp COMMA   &cmt 3 DOT     &cmt 2 SLASH
                                      &kp BACKSPACE  &kp SPACE    &kp ENTER  &mo 1
             >;
-        sensor-bindings = <&rot_tab>;
+        sensor-bindings = <&rot_tab PG_UP PG_DN>;
         };
 
         right_layer {
@@ -319,7 +319,7 @@
 &trans  &trans  &none     &kp BSLH       &kp MINUS    &kp SQT   &kp GRAVE  &kp COMMA  &kp PERIOD  &kp RSHFT
                           &kp BACKSPACE  &kp SPACE    &trans    &mo 3
             >;
-        sensor-bindings = <&rot_tab>;
+        sensor-bindings = <&rot_tab PG_UP PG_DN>;
         };
 
         left_layer {
@@ -329,7 +329,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR_ALL      &none      &none     &none  &mkp MB4      &none    &mkp MB5       &none
                                               &none      &screenshot    &record     &none
             >;
-        sensor-bindings = <&rot_tab>;
+        sensor-bindings = <&rot_tab PG_UP PG_DN>;
         };
 
         tri_layer {
@@ -339,7 +339,7 @@
 &none  &none      &none         &msc SCRL_DOWN  &none    &mkp MB3   &none        &none       &none      &none
                          &none  &none          &mkp MB1  &mkp MB2
             >;
-        sensor-bindings = <&rot_tab>;
+        sensor-bindings = <&rot_tab PG_UP PG_DN>;
         };
     };
 };
