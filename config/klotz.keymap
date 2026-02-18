@@ -309,7 +309,7 @@
 &kp Z        &kp X       &kp C       &kp V          &kp B        &kp N      &kp M        &kp COMMA   &cmt 3 DOT     &cmt 2 SLASH
                                      &kp BACKSPACE  &kp SPACE    &kp ENTER  &mo 1
             >;
-        sensor-bindings = <&rot>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         right_layer {
@@ -319,7 +319,7 @@
 &trans  &trans  &none     &kp BSLH       &kp MINUS    &kp SQT   &kp GRAVE  &kp COMMA  &kp PERIOD  &kp RSHFT
                           &kp BACKSPACE  &kp SPACE    &trans    &mo 3
             >;
-        sensor-bindings = <&rot>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         left_layer {
@@ -329,7 +329,7 @@
 &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_CLR_ALL      &none      &none     &none  &mkp MB4      &none    &mkp MB5       &none
                                               &none      &screenshot    &record     &none
             >;
-        sensor-bindings = <&rot>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         tri_layer {
@@ -339,7 +339,7 @@
 &none  &none      &none         &msc SCRL_DOWN  &none    &mkp MB3   &none        &none       &none      &none
                          &none  &none          &mkp MB1  &mkp MB2
             >;
-        sensor-bindings = <&rot>;
+        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
