@@ -303,7 +303,7 @@
 &kp Z        &kp X       &kp C       &kp V          &kp B        &kp N      &kp M        &kp COMMA   &cmt 3 DOT     &cmt 2 SLASH
                                      &kp BACKSPACE  &kp SPACE    &kp ENTER  &mo 1
             >;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        sensor-bindings = <&tab_right &tab_left>;
         };
 
         right_layer {
